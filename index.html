@@ -810,11 +810,13 @@
               <form
                 id="contact-form"
                 class="contact-form"
-                action="contact.php"
+                name="contact"
                 method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="website"
                 novalidate
               >
-                
+                <input type="hidden" name="form-name" value="contact">
                 <input
                   type="text"
                   name="website"

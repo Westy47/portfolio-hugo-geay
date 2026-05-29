@@ -14,21 +14,21 @@
     status.className   = 'form-status';
 
     try {
-      const res  = await fetch('contact.php', {
-        method: 'POST',
-        body:   new FormData(form),
+      const data = new FormData(form);
+      const body = new URLSearchParams(data).toString();
+
+      const res = await fetch('/', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
       });
 
-      let data;
-      try { data = await res.json(); } catch { data = { ok: false }; }
-
-      if (data.ok) {
+      if (res.ok) {
         status.textContent = '✓ Message envoyé ! Je te répondrai dès que possible.';
         status.classList.add('ok');
         form.reset();
       } else {
-        const msg = Array.isArray(data.errors) ? data.errors.join(' ') : 'Une erreur est survenue.';
-        status.textContent = msg;
+        status.textContent = 'Une erreur est survenue. Réessaie ou écris-moi directement.';
         status.classList.add('error');
       }
     } catch {
