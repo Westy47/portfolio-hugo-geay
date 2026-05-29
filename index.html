@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="fr" data-snap>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio d'Hugo Geay, étudiant en BUT MMI à Dijon, en recherche d'alternance en développement web à partir de septembre 2026. Projets WordPress, PHP, SQL et création graphique." />
+    <title>Hugo Geay — Développeur Web</title>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    
+    <nav class="glass">
+      <div class="container nav-inner">
+        <a href="#" class="nav-logo">HG</a>
+        <button class="nav-hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li>
+            <a
+              href="#contact"
+              class="btn btn-primary"
+              style="padding: 0.55rem 1.1rem; font-size: 0.85rem"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="page-scroller">
+      
+      <section id="hero">
+        <div class="container">
+          <div class="bento-grid">
+            
+            <div class="bento-tile tile-identity glass reveal">
+              <div class="tile-identity-head">
+                <span class="hero-label">Portfolio · 2026</span>
+                <div class="avail-badge">
+                  <span class="avail-dot"></span>
+                  Disponible
+                </div>
+              </div>
+              <h1>Hugo<br />Geay</h1>
+              <p class="hero-subtitle">Développeur Web</p>
+              <p class="hero-tagline">
+                Etudiant en première année de <strong>BUT Métiers du Multimédia et de l’Internet</strong>, je suis à la recherche d’une <strong>alternance à partir de septembre 2026</strong> dans le domaine du <strong>développement web</strong> pour la communication ou du développement logiciel.
+              </p>
+              <div class="hero-ctas">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                <a
+                  href="assets/cv-hugo-geay.pdf"
+                  download
+                  class="btn btn-secondary"
+                  aria-label="Télécharger le CV"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 3v12m0 0-4-4m4 4 4-4M3 17v1a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1"
+                    />
+                  </svg>
+                  CV
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="bento-tile tile-stats glass reveal">
+              <div class="profile-row">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 10V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8"
+                  />
+                  <path d="M12 12H2M7 8v8" />
+                  <circle cx="18" cy="18" r="4" />
+                  <path d="M18 14v4l2 2" />
+                </svg>
+                <div>
+                  <span class="profile-label">Formation</span>
+                  <span class="profile-value">BUT MMI · Année 1</span>
+                </div>
+              </div>
+
+              <div class="stat-sep"></div>
+
+              <div class="profile-row">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                <div>
+                  <span class="profile-label">Alternance</span>
+                  <span class="profile-value">Dispo · sept. 2026</span>
+                </div>
+              </div>
+
+              <div class="stat-sep"></div>
+
+              <div class="profile-row">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20A14.5 14.5 0 0 0 12 2" />
+                  <path d="M2 12h20" />
+                </svg>
+                <div>
+                  <span class="profile-label">Langues</span>
+                  <span class="profile-value">FR · EN B2</span>
+                </div>
+              </div>
+
+              <div class="tile-loc">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"
+                  />
+                </svg>
+                <span>Dijon, France</span>
+              </div>
+            </div>
+
+            
+            <div class="bento-tile tile-stack glass reveal">
+              <p class="tile-eyebrow">Stack</p>
+              <div class="stack-tags">
+                <span class="tag">
+                  <img
+                    src="https://cdn.simpleicons.org/figma/005e7c"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  Figma
+                </span>
+                <span class="tag">
+                  <img
+                    src="assets/icons/photoshop.svg"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  Photoshop
+                </span>
+                <span class="tag">
+                  <img
+                    src="assets/icons/illustrator.svg"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  Illustrator
+                </span>
+                <span class="tag">
+                  <img
+                    src="assets/icons/indesign.svg"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  InDesign
+                </span>
+                <span class="tag">
+                  <img
+                    src="assets/icons/premierepro.svg"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  Premiere Pro
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.simpleicons.org/davinciresolve/005e7c"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  DaVinci Resolve
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.simpleicons.org/html5/005e7c"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  HTML / CSS
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.simpleicons.org/javascript/005e7c"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  JavaScript
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.simpleicons.org/php/005e7c"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  PHP
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.simpleicons.org/mysql/005e7c"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  MySQL
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.simpleicons.org/git/005e7c"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  Git
+                </span>
+                <span class="tag">
+                  <img
+                    src="https://cdn.simpleicons.org/wordpress/005e7c"
+                    alt=""
+                    width="14"
+                    height="14"
+                    aria-hidden="true"
+                  />
+                  WordPress
+                </span>
+              </div>
+            </div>
+
+            <article class="bento-tile tile-featured glass reveal">
+              <img
+                src="projects/cn-charte-norgaard/images/cover.jpg"
+                alt="Charte graphique Norgaard"
+                class="featured-img"
+                loading="eager"
+                width="900"
+                height="500"
+              />
+              <div class="featured-body">
+                <p class="tile-eyebrow">Projet phare</p>
+                <h3>Charte graphique — Norgaard</h3>
+                <p>Identité visuelle complète pour une marque fictive de matériel d'alpinisme : logo, charte et mockups.</p>
+                <div class="featured-footer">
+                  <div class="project-tags">
+                    <span class="tag">
+                      <img src="assets/icons/illustrator.svg" alt="" width="14" height="14" aria-hidden="true">
+                      Illustrator
+                    </span>
+                    <span class="tag">
+                      <img src="assets/icons/indesign.svg" alt="" width="14" height="14" aria-hidden="true">
+                      InDesign
+                    </span>
+                  </div>
+                  <a href="projects/cn-charte-norgaard/index.html" class="feat-link">Voir →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="about">
+        <div class="container">
+          <div class="about-layout reveal">
+            <div class="about-card glass">
+              <div class="avatar" aria-hidden="true">HG</div>
+              <img
+                src="assets/photo.jpg"
+                alt="Hugo Geay"
+                class="about-avatar-mobile"
+                onerror="this.style.display='none'">
+              <div class="about-text">
+                <h2>À propos</h2>
+                <p>
+                  Le <strong>développement web</strong> et la <strong>création d'applications</strong> me captivent depuis que j'ai réalisé qu'on pouvait construire des expériences entières à partir d'une page blanche — et que chaque détail, du design à la ligne de code, compte. En première année de <strong>BUT MMI</strong> à Dijon, je me forme autant sur le <strong>front-end</strong> que le <strong>back-end</strong>, avec un œil attentif à l'interface et à l'expérience utilisateur. Ce qui m'anime vraiment : transformer une idée en quelque chose de concret, fonctionnel et soigné, et apprendre à chaque projet un peu plus que le précédent.
+                </p>
+              </div>
+            </div>
+            <div class="about-photo-wrap glass">
+              <img
+                src="assets/photo.jpg"
+                alt="Hugo Geay"
+                class="about-photo"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="about-photo-placeholder" style="display: none">
+                HG
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="projects">
+        <div class="section-scroll">
+          <div class="container">
+            <div class="section-header reveal">
+              <h2>Projets</h2>
+              <p>Une sélection de réalisations récentes.</p>
+            </div>
+
+            <div class="project-filters reveal">
+              <button class="filter-btn active" data-filter="all">Tous</button>
+              <button class="filter-btn" data-filter="creation">
+                Création numérique
+              </button>
+              <button class="filter-btn" data-filter="web">
+                Développement web
+              </button>
+              <button class="filter-btn" data-filter="autre">Autre</button>
+            </div>
+
+            <div class="projects-grid">
+              <article
+                class="project-card glass reveal"
+                data-category="creation"
+              >
+                <a href="projects/cn-affiche-epilepsie/index.html">
+                  <img
+                    src="projects/cn-affiche-epilepsie/images/cover.png"
+                    alt="Affiche de sensibilisation à l'épilepsie"
+                    class="project-img"
+                    loading="eager"
+                    width="800"
+                    height="450"
+                  />
+                </a>
+                <div class="project-card-body">
+                  <h3>
+                    <a
+                      href="projects/cn-affiche-epilepsie/index.html"
+                      class="project-title-link"
+                      >Affiche — Sensibilisation à l'épilepsie</a
+                    >
+                  </h3>
+                  <p>
+                    Affiche de sensibilisation conçue dans le cadre d'un projet
+                    scolaire. L'objectif : communiquer sur l'épilepsie de façon
+                    percutante et accessible, en jouant sur la typographie et la
+                    composition visuelle.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">
+                      <img
+                        src="assets/icons/photoshop.svg"
+                        alt=""
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      />
+                      Photoshop
+                    </span>
+                    <span class="tag">Création graphique</span>
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="projects/cn-affiche-epilepsie/index.html"
+                      class="project-link"
+                      >Détails →</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card glass reveal" data-category="web">
+                <a href="projects/projet-2/index.html">
+                  <img
+                    src="projects/projet-2/images/cover.jpg"
+                    alt="Site JSP Saint-Seine"
+                    class="project-img"
+                    loading="lazy"
+                    width="800"
+                    height="450"
+                  />
+                </a>
+                <div class="project-card-body">
+                  <h3>
+                    <a
+                      href="projects/projet-2/index.html"
+                      class="project-title-link"
+                      >Site JSP Saint-Seine</a
+                    >
+                  </h3>
+                  <p>
+                    Site WordPress conçu pour un commanditaire réel — les Jeunes
+                    Sapeurs-Pompiers de Saint-Seine. Entièrement fonctionnel, il
+                    permet de publier des articles et des événements.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">
+                      <img
+                        src="https://cdn.simpleicons.org/wordpress/005e7c"
+                        alt=""
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      />
+                      WordPress
+                    </span>
+                    <span class="tag">Commande réelle</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="projects/projet-2/index.html" class="project-link"
+                      >Détails →</a
+                    >
+                    <a
+                      href="https://jspsaintseine.fr"
+                      class="project-link"
+                      target="_blank"
+                      rel="noopener"
+                      >Live →</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card glass reveal" data-category="web">
+                <a href="projects/projet-3/index.html">
+                  <img
+                    src="projects/projet-3/images/cover.jpg"
+                    alt="Boutique en ligne — Horloger Dijonnais"
+                    class="project-img"
+                    loading="lazy"
+                    width="800"
+                    height="450"
+                  />
+                </a>
+                <div class="project-card-body">
+                  <h3>
+                    <a
+                      href="projects/projet-3/index.html"
+                      class="project-title-link"
+                      >Boutique — Horloger Dijonnais</a
+                    >
+                  </h3>
+                  <p>
+                    Site e-commerce pour un horloger vintage fictif basé à
+                    Dijon. Vente de montres et pendules d'occasion avec gestion
+                    du catalogue produits via WooCommerce.
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">
+                      <img
+                        src="https://cdn.simpleicons.org/wordpress/005e7c"
+                        alt=""
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      />
+                      WordPress
+                    </span>
+                    <span class="tag">
+                      <img
+                        src="https://cdn.simpleicons.org/woocommerce/005e7c"
+                        alt=""
+                        width="14"
+                        height="14"
+                        aria-hidden="true"
+                      />
+                      WooCommerce
+                    </span>
+                  </div>
+                  <div class="project-links">
+                    <a href="projects/projet-3/index.html" class="project-link"
+                      >Détails →</a
+                    >
+                    <a
+                      href="https://dev-montre-vintage.pantheonsite.io/"
+                      class="project-link"
+                      target="_blank"
+                      rel="noopener"
+                      >Live →</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card glass reveal" data-category="web">
+                <a href="projects/web-concours-photo/index.html">
+                  <img
+                    src="projects/web-concours-photo/images/cover.jpg"
+                    alt="Site de concours photo"
+                    class="project-img"
+                    loading="lazy"
+                    width="800"
+                    height="450"
+                  />
+                </a>
+                <div class="project-card-body">
+                  <h3>
+                    <a href="projects/web-concours-photo/index.html" class="project-title-link">Site de concours photo</a>
+                  </h3>
+                  <p>Application web de gestion de concours photo avec authentification, soumission des participations et administration des résultats via une base de données SQL.</p>
+                  <div class="project-tags">
+                    <span class="tag">
+                      <img src="https://cdn.simpleicons.org/php/005e7c" alt="" width="14" height="14" aria-hidden="true">
+                      PHP
+                    </span>
+                    <span class="tag">
+                      <img src="https://cdn.simpleicons.org/mysql/005e7c" alt="" width="14" height="14" aria-hidden="true">
+                      MySQL
+                    </span>
+                  </div>
+                  <div class="project-links">
+                    <a href="projects/web-concours-photo/index.html" class="project-link">Détails →</a>
+                    <a href="https://github.com/Westy47/siteweb-sae203/" class="project-link" target="_blank" rel="noopener">GitHub →</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card glass reveal" data-category="creation">
+                <a href="projects/cn-charte-norgaard/index.html">
+                  <img
+                    src="projects/cn-charte-norgaard/images/cover.jpg"
+                    alt="Charte graphique Norgaard"
+                    class="project-img"
+                    loading="lazy"
+                    width="800"
+                    height="450"
+                  />
+                </a>
+                <div class="project-card-body">
+                  <h3><a href="projects/cn-charte-norgaard/index.html" class="project-title-link">Charte graphique — Norgaard</a></h3>
+                  <p>Identité visuelle complète pour une marque fictive de matériel d'alpinisme : logo, charte graphique et mockups.</p>
+                  <div class="project-tags">
+                    <span class="tag">
+                      <img src="assets/icons/illustrator.svg" alt="" width="14" height="14" aria-hidden="true">
+                      Illustrator
+                    </span>
+                    <span class="tag">
+                      <img src="assets/icons/indesign.svg" alt="" width="14" height="14" aria-hidden="true">
+                      InDesign
+                    </span>
+                    <span class="tag">
+                      <img src="assets/icons/photoshop.svg" alt="" width="14" height="14" aria-hidden="true">
+                      Photoshop
+                    </span>
+                  </div>
+                  <div class="project-links">
+                    <a href="projects/cn-charte-norgaard/index.html" class="project-link">Détails →</a>
+                  </div>
+                </div>
+              </article>
+<!-- END_PROJECTS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="skills">
+        <div class="section-scroll">
+          <div class="container">
+            <div class="section-header reveal">
+              <h2>Compétences</h2>
+              <p>Les outils avec lesquels je travaille.</p>
+            </div>
+
+            <div class="skills-grid reveal">
+              <div class="skills-group">
+                <h3>Design &amp; Création visuelle</h3>
+                <div class="skills-tags">
+                  <span class="tag">
+                    <img
+                      src="https://cdn.simpleicons.org/figma/005e7c"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    Conception UI/UX
+                  </span>
+                  <span class="tag">
+                    <img
+                      src="assets/icons/illustrator.svg"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    Identité visuelle
+                  </span>
+                  <span class="tag">
+                    <img
+                      src="assets/icons/photoshop.svg"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    Photographie &amp; retouche
+                  </span>
+                  <span class="tag">
+                    <img
+                      src="assets/icons/indesign.svg"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    Suite Adobe (Ps, Ai, Id, Pr)
+                  </span>
+                </div>
+              </div>
+
+              <div class="skills-group">
+                <h3>Développement web &amp; apps</h3>
+                <div class="skills-tags">
+                  <span class="tag">
+                    <img
+                      src="https://cdn.simpleicons.org/html5/005e7c"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    HTML, CSS, JavaScript
+                  </span>
+                  <span class="tag">
+                    <img
+                      src="https://cdn.simpleicons.org/php/005e7c"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    PHP &amp; bases de données SQL
+                  </span>
+                  <span class="tag">
+                    <img
+                      src="https://cdn.simpleicons.org/css/005e7c"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    Intégration &amp; responsive design
+                  </span>
+                  <span class="tag">
+                    <img
+                      src="https://cdn.simpleicons.org/googlesearchconsole/005e7c"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    Référencement naturel (SEO)
+                  </span>
+                  <span class="tag">
+                    <img
+                      src="https://cdn.simpleicons.org/figma/005e7c"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    UX Research &amp; prototypage
+                  </span>
+                  <span class="tag">
+                    <img
+                      src="https://cdn.simpleicons.org/javascript/005e7c"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    Sites &amp; apps dynamiques
+                  </span>
+                </div>
+              </div>
+
+              <div class="skills-group">
+                <h3>Communication &amp; Gestion de projet</h3>
+                <div class="skills-tags">
+                  <span class="tag">
+                    <img
+                      src="https://cdn.simpleicons.org/jira/005e7c"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    Gestion de projet agile
+                  </span>
+                  <span class="tag">Communication digitale</span>
+                  <span class="tag">
+                    <img
+                      src="https://cdn.simpleicons.org/wordpress/005e7c"
+                      alt=""
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                    />
+                    Rédaction web &amp; contenus
+                  </span>
+                  <span class="tag">Culture numérique &amp; veille</span>
+                  <span class="tag">Notions RGPD &amp; cybersécurité</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <footer id="contact">
+        <div class="container">
+          <div class="contact-card glass reveal">
+            <div class="contact-layout">
+              
+              <div class="contact-info">
+                <h2>Travaillons ensemble</h2>
+                <p>
+                  Un projet, une idée, une opportunité ? Envoie-moi un message,
+                  je réponds sous 48h.
+                </p>
+                <div class="social-links">
+                  <a
+                    href="https://github.com/Westy47"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/hugo-geay-b00108351/"
+                    class="social-link"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                  >
+                </div>
+              </div>
+
+              
+              <form
+                id="contact-form"
+                class="contact-form"
+                action="contact.php"
+                method="POST"
+                novalidate
+              >
+                
+                <input
+                  type="text"
+                  name="website"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  autocomplete="off"
+                  class="contact-honeypot"
+                />
+
+                <div class="form-group">
+                  <label for="cf-name" class="form-label">Nom</label>
+                  <input
+                    type="text"
+                    id="cf-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Jean Dupont"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="cf-email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="cf-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="jean@exemple.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="cf-message" class="form-label">Message</label>
+                  <textarea
+                    id="cf-message"
+                    name="message"
+                    class="form-input form-textarea"
+                    placeholder="Décris ton projet ou ton idée…"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-footer">
+                  <p class="form-status" role="status" aria-live="polite"></p>
+                  <button type="submit" class="btn btn-primary form-submit">
+                    <span class="submit-label">Envoyer</span>
+                    <svg
+                      class="submit-spinner"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83
+                           M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <p class="footer-copy">© 2026 Hugo Geay</p>
+        </div>
+      </footer>
+    </main>
+    
+
+    <script src="js/nav.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
